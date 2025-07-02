@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const callbackName = `jsonpCallback${++callbackCounter}`;
         
         // JSONP URL 구성 - MMEAL_SC_CODE=2 추가 (점심만)
-        const url = `${BASE_URL}?Type=json&pIndex=1&pSize=100&ATPT_OFCDC_SC_CODE=M10&SD_SCHUL_CODE=811143&MLSV_YMD=${dateStr}&MMEAL_SC_CODE=2&KEY=${API_KEY}&callback=${callbackName}`;
+        const url = `${BASE_URL}?Type=json&pIndex=1&pSize=100&ATPT_OFCDC_SC_CODE=M10&SD_SCHUL_CODE=8011143&MLSV_YMD=${dateStr}&MMEAL_SC_CODE=2&KEY=${API_KEY}&callback=${callbackName}`;
 
         // 전역 콜백 함수 등록
         window[callbackName] = function(data) {
