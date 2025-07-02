@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>급식 정보 확인</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>오늘의 급식</h1>
+        <p>원하는 날짜의 급식 정보를 확인하세요!</p>
+    </div>
+    <div class="container">
+        <div style="margin-bottom:2rem;display:flex;align-items:center;gap:1rem;">
+            <label for="date-input">날짜 선택:</label>
+            <input id="date-input" type="date" />
+        </div>
+        <div id="today-menu" style="margin-bottom:2rem;"></div>
+        <div id="loading" style="display:none;text-align:center;">검색 중...</div>
+        <ul id="menu-list" class="menu-list"></ul>
+        <div style="margin-top:2rem;color:#888;font-size:0.95rem;">* 날짜를 선택하면 해당 날짜의 급식만 보여집니다.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
